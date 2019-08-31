@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"><ImageView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background = "@drawable/animation"/></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="310dp">
+        <LinearLayout
+            android:id="@+id/mini"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13pt"
+                android:text="미 니"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ga"
+                android:paddingRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15pt"
+                android:text="가"/>
+            <TextView
+                android:id="@+id/gye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15pt"
+                android:text="계"/>
+            <TextView
+                android:id="@+id/boo"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15pt"
+                android:text="부"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000000"
+                android:paddingTop="30dp"
+                android:id="@+id/maketh_rich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                android:text="기록이 부자를 만든다"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

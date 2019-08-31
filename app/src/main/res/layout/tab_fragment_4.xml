@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/lifeAndScore"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/lifeRemain"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:text="남은 라이프 수 = 10"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/yourScore"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:text="점 수 = 0"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/gameStatus"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:textSize="8pt"
+                    android:text="회색 패치를 터치할 시 라이프 감소"/>
+                <Button
+                    android:id="@+id/start"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시작"/>
+                <Button
+                    android:id="@+id/manual"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="설명"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <GridLayout
+            android:id="@+id/patches"
+            android:layout_below="@id/lifeAndScore"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:columnCount="4"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/patch1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch9"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch11"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+            <LinearLayout
+                android:id="@+id/patch12"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width = "70dp"
+                android:layout_height= "70dp"
+                android:background="#AAAAAA"/>
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_below="@id/patches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="10pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="나타나는 초록색 패치를 놔두지 마라!"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

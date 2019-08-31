@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DFDFDF"
+            android:id="@+id/upperBar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="수입"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="지출"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="합계"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mTotalIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0000FF"
+                    android:text="0"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/mTotalSpending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"/>
+                <TextView
+                    android:id="@+id/mTotalSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/monthlyListViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upperBar"
+            >
+
+            <ListView
+                android:id="@+id/monthlyListView"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="11pt"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/advertisement"
+            android:layout_alignParentBottom="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#00DDAA"
+            >
+
+            <ImageView
+                android:id="@+id/adImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:id = "@+id/adText"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#AADD00"
+                android:text="ad"
+                android:textSize="10pt"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
